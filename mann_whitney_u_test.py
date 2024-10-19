@@ -1,4 +1,20 @@
-# Preforms statistical analysis on population data. 5 mice, 2 brain areas, 3 sound stimuli.
+"""
+This script performs statistical analysis on population data from 5 mice across 2 brain areas (Primary and Ventral auditory areas) 
+and 3 sound stimuli (speech, AM, pure tones). The data is analyzed using spike rate calculations and principal component analysis (PCA). 
+For each mouse, the script processes electrophysiology data for multiple recording sessions, filters trials based on 
+frequency occurrence thresholds, and applies PCA to the neural responses to the stimuli.
+
+Key Functions:
+- load_data(): Loads the dataset for a specific subject, date, brain area, and sound type.
+- spike_rate(): Computes the spike rate for each stimulus and normalizes it for PCA analysis.
+- adjust_array_and_labels(): Adjusts and filters the input data arrays to ensure consistency.
+- sort_x_arrays(): Sorts input data arrays based on stimulus conditions.
+- calculate_participation_ratio_percent(): Calculates the participation ratio percentage from PCA results.
+- plot_scree_plot(): Plots the scree plot showing the explained variance ratio of PCA components.
+- select_neurons(): Randomly selects neurons based on a minimum number required per brain area.
+- create_figure_grid(): Creates a grid of subplots for visualizing results.
+"""
+
 
 import numpy as np
 import pandas as pd
