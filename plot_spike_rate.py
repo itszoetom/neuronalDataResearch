@@ -1,3 +1,10 @@
+# This script loads neuronal spike rate data from one mouse on a specific day to compare the firing rates
+# in response to pure tones and amplitude-modulated (AM) sounds. It processes data by extracting spike 
+# times and event onset times, aligning them, and calculating spike rates over defined time windows.
+# The script then visualizes the spike rates of two selected neurons, plotting their activity for pure tones 
+# and AM sounds using a scatter plot with color-coded data based on the stimulus frequency.
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
