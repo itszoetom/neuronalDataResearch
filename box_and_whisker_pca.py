@@ -1,4 +1,13 @@
-# Plots Box and Whisker Plot for final visualization
+# This script processes neural spike data from different sound types (speech, amplitude-modulated tones, and pure tones)
+# recorded from mice's auditory cortex across multiple sessions. It generates box-and-whisker plots to visualize 
+# the distribution of spike rates for each sound type and brain area. The script includes:
+# - Loading and cleaning of spike rate data for specific brain regions (Primary, Dorsal, Ventral auditory areas).
+# - Sorting trials by frequency parameters (e.g., FTVOT for speech).
+# - Normalizing and truncating spike rates for further analysis.
+# - Calculating participation ratios of neural responses.
+# - Filtering out trials based on criteria like minimum trial count and neuron availability.
+# - Preparing data for PCA and plotting sorted spike rates.
+
 
 import numpy as np
 import pandas as pd
