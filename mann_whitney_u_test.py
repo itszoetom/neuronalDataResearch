@@ -1,5 +1,4 @@
-# Plots 2D PCA and Scree Plots for each mouse.
-# 3x3 plots with each brain area - sound type combination
+# Preforms statistical analysis on population data. 5 mice, 2 brain areas, 3 sound stimuli.
 
 import numpy as np
 import pandas as pd
