@@ -1,10 +1,10 @@
+# Calculating firing rate and plotting Raster and PSTH Graphs. Individual neurons in a mouse on a certain day.
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
 import jaratoolbox
 from jaratoolbox import celldatabase, ephyscore, behavioranalysis, extraplots
-
-# Calculating firing rate and plotting Raster and PSTH Graphs. Individual neurons in a mouse on a certain day.
 
 # Loads in dataframe for one mouse
 oneMouseDf = jaratoolbox.celldatabase.generate_cell_database_from_subjects(["feat004"])
