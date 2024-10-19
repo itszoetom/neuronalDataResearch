@@ -1,11 +1,11 @@
+# Calculate Spike Rate and Visualizes PCA on two cells. One mouse, one day.
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
 import jaratoolbox
 from jaratoolbox import celldatabase, ephyscore, settings
 from sklearn.decomposition import PCA
-
-# Calculate Spike Rate and Visualizes PCA on two cells. One mouse, one day.
 
 # Loads in dataframe for one mouse
 subject = 'feat004'
