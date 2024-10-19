@@ -1,10 +1,22 @@
+# Electrophysiological and behavioral neuron data.
+# This script calculates the firing rate of individual neurons and plots both Raster and PSTH graphs.
+# It focuses on neurons in one mouse on a single day of recordings.
+# Data is loaded for one specific neuron (cell) based on the session date and probe depth.
+# The script extracts spike times and event onset times, calculates baseline and evoked firing rates, 
+# and visualizes the results in Raster and PSTH plots for different sound stimuli (pure tones and amplitude modulation (AM)).
+
+# Key Steps:
+# - Load electrophysiological data and behavior data for selected neurons.
+# - Calculate baseline and evoked firing rates around event onset times.
+# - Plot Raster and PSTH graphs for each session type.
+# - Customize plots with Tango color schemes and save the output for each neuron.
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
 import jaratoolbox
 from jaratoolbox import celldatabase, ephyscore, behavioranalysis, extraplots
 
-# Electrophysiological and behavioral neuron data. Calculating firing rate plotting Raster and PSTH Graphs. Individual neurons in one mouse on one  day. 
 
 # Loads in dataframe for one mouse
 oneMouseDf = jaratoolbox.celldatabase.generate_cell_database_from_subjects(["feat004"])
