@@ -1,13 +1,13 @@
+# Calculate and analyze spike rates for all Pure Tone and Amplitude Modulated sounds.
+# Perform PCA on the ensemble data, visualize the principal components, and show the variance
+# explained across all cells.
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
 import jaratoolbox
 from jaratoolbox import celldatabase, ephyscore, settings
 from sklearn.decomposition import PCA
-
-# Calculate and analyze spike rates for all Pure Tone and Amplitude Modulated sounds.
-# Perform PCA on the ensemble data, visualize the principal components, and show the variance
-# explained across all cells.
 
 # Loads in dataframe for one mouse
 subject = 'feat004'
