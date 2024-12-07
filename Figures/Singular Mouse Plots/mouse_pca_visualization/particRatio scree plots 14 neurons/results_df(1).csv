@@ -1,0 +1,9 @@
+0,Primary auditory area - speech,Primary auditory area - AM,0.200000,False
+1,Primary auditory area - speech,Primary auditory area - PT,0.885714,False
+2,Primary auditory area - speech,Ventral auditory area - speech,0.885714,False
+3,Primary auditory area - AM,Primary auditory area - PT,0.114286,False
+4,Primary auditory area - AM,Ventral auditory area - AM,0.485714,False
+5,Primary auditory area - PT,Ventral auditory area - PT,0.685714,False
+6,Ventral auditory area - speech,Ventral auditory area - AM,0.200000,False
+7,Ventral auditory area - speech,Ventral auditory area - PT,0.685714,False
+8,Ventral auditory area - AM,Ventral auditory area - PT,0.200000,False
