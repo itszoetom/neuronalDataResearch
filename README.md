@@ -1,22 +1,25 @@
-# Data Visualization and Statistical Analysis
+# Neuronal Data Research
 
-This repository contains various data visualization scripts and statistical analyses related to neuronal spike rate data in PCA space.
+This repository contains scripts and Jupyter notebooks for analyzing electrophysiological recordings, with a focus on evoked responses, PCA, discriminability, and ridge regression decoding. Figures are organized into subfolders for easy retrieval.
 
-## File Overview
+## Repository Structure
 
-- **plot_...**: Files that begin with `plot_` are dedicated to generating various data visualizations, particularly in PCA space. These visualizations explore spike rate comparisons across different sound stimuli and neuronal responses.
-  
-- **box_and_whiskey.py**: This is the final visualization script, presenting a summary of data through box-and-whisker plots. The script provides a comprehensive view of the variance in spike rates across different conditions.
-  
-- **mann_whitney_u.py**: This script performs a Mann-Whitney U test, a non-parametric statistical analysis, comparing the spike rate distributions between different conditions to test for significant differences.
+### **Evoked**
+- **Discriminability**: Uses d-prime and LDA to measure neural discrimination of stimuli.
+- **PCA**: Principal Component Analysis of evoked neural activity with statistical tests (Mann–Whitney U, t-tests).
+- **Ridge**: Decoding analysis using ridge regression, including full dataset, subsets, and more complex models.
 
-## Additional Branch
+### **Spike Windows**
+- Repeated evoked period analysis for three defined spike windows: onset, sustained, and offset.
 
-- **itszoetom-patch-1**: In this branch, you'll find additional visualizations generated from the scripts mentioned above. These include detailed PCA projections, spike rate comparisons, and further explorations of the data.
+### **Single Mouse Analysis**
+- Scripts and notebooks for analyses at the individual mouse level.
 
-## How to Use
+### **Figures**
+- Organized into subfolders for population-level, single-mouse, ridge regression, and poster-ready plots.
 
-1. Clone the repository.
-2. Switch to the `itszoetom-patch-1` branch to view visualizations:
-   ```bash
-   git checkout itszoetom-patch-1
+### **Supporting Scripts**
+- **database_generation.py**: Builds experimental database.
+- **funcs.py**: Shared helper functions.
+- **neuropix_split_multisession.py**: Processes multi-session Neuropixels data.
+- **params.py**: Analysis parameters.
